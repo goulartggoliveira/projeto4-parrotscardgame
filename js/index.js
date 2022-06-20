@@ -54,7 +54,7 @@ function addCards() {
     <div class="front-card body-card" > 
     <img src="${evenCards[i]}" /> 
     </div>
-    <div class="back-card body-card" ><img src="/imgs/front.png">
+    <div class="back-card body-card" ><img src="./front.png">
     </div>
     </div>
     `;
