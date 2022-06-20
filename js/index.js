@@ -23,6 +23,8 @@ function addCards() {
     );
   }
 
+  //OBJETOS IMAGES
+
   let images = [
     "imgs/bobrossparrot.gif",
     "imgs/explodyparrot.gif",
