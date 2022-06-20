@@ -53,20 +53,45 @@ img {
   border: 1px solid #99cea8;
   border-radius: 5px;
   backface-visibility: hidden;
+  transition: all 0.5s;
+  transform-style: preserve-3d;
 }
 
 .front-card {
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: rotateY(180deg);
+}
+
+.card.chosen .front-card {
+  transform: rotateY(0deg);
 }
 
 .back-card {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: rotateX(0deg);
+}
+
+.card.chosen .back-card {
+  transform: rotateX(180deg);
 }
 
 .card:hover {
   cursor: pointer;
+}
+
+@media (max-width: 335px) {
+  h1 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    margin-left: 40px;
+  }
+  .title {
+    margin: 47px;
+  }
 }
