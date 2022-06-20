@@ -36,9 +36,9 @@ img {
 }
 
 .card {
+  position: relative;
   width: 117px;
   height: 146px;
-  position: relative;
   margin: 17px;
 }
 
@@ -52,4 +52,21 @@ img {
   background: #a7e9af;
   border: 1px solid #99cea8;
   border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.front-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  cursor: pointer;
 }
