@@ -39,6 +39,8 @@ function addCards() {
     evenCards.push(images[i], images[i]);
   }
 
+  /* MÉTODO sort() */
+
   evenCards.sort(twistCards);
 
   /* CRIAÇÃO DA DIV DOS CARDS */
@@ -74,7 +76,6 @@ function turnCards(element) {
       i++;
       element.classList.add("chosen");
       chosenCard.push(element);
-      console.log(chosenCard.length);
 
       if (i === 2) {
         if (chosenCard[i - 2].innerHTML === chosenCard[i - 1].innerHTML) {
