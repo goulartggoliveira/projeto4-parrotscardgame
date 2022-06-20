@@ -28,3 +28,28 @@ h1 {
   flex-wrap: wrap;
   width: 100%;
 }
+
+/* IMPLEMENTADO NO JAVASCRIPT */
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.card {
+  width: 117px;
+  height: 146px;
+  position: relative;
+  margin: 17px;
+}
+
+.body-card {
+  position: absolute;
+  width: 117px;
+  height: 146px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #a7e9af;
+  border: 1px solid #99cea8;
+  border-radius: 5px;
+}
